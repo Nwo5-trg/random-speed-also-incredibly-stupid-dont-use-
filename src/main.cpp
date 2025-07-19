@@ -36,10 +36,6 @@ class $modify(BaseGame, GJBaseGameLayer) {
         return GJBaseGameLayer::init();
     }
 
-    void enterDualMode(GameObject* p0, bool p1) {
-        GJBaseGameLayer::enterDualMode(p0, p1);
-    }
-
     void updateRandom(float dt) {
         if (!isPLayLayer) return;
         currentRandSpeed = speeds[distribution(rng)];
